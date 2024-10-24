@@ -1,0 +1,143 @@
+/* Estilos  Mobile */
+@media (max-width: 896px) {
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.1rem;
+    gap: 0.2rem;
+    width: 100%;
+  }
+
+  .card {
+    width: 20rem !important;
+    height: 29rem !important;
+    background-color: white !important;
+    overflow: hidden !important;
+  }
+
+  .card-img {
+    width: 15rem !important;
+    height: 10rem !important;
+  }
+
+  .card div h1 {
+    font-size: 1.125rem !important;
+  }
+  .card div h2 {
+    font-size: 1.4rem !important;
+  }
+  .cant-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 13.5rem !important;
+  }
+}
+
+@media (max-width: 462px) {
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.1rem;
+    gap: 1.8rem !important;
+    width: 100%;
+  }
+
+  .card {
+    width: 14rem !important;
+    height: 21rem !important;
+    background-color: white !important;
+    overflow: hidden !important;
+  }
+
+  .card-img {
+    width: 15rem !important;
+    height: 10rem !important;
+  }
+
+  .card div h1 {
+    font-size: 1.125rem;
+  }
+  .card div h2 {
+    font-size: 1.4rem;
+  }
+  .cant-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 12rem !important;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  height: 25rem;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .cantButton {
+  background-color: #f0a849;
+}
+
+.cantButton {
+  width: 6.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+  border: none;
+  background-color: #f0a849a9;
+  border: 1px solid #f0a849a9;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cantButton:hover {
+  border: 1px solid #14110c;
+  box-shadow: 0 0 0 2px rgba(14, 14, 14, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.cant-container .ant-input {
+  width: 80%;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.cant-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 15rem;
+}
+
+.filter-button {
+  background-color: #f0a84900;
+  border: 1px solid #f0a849;
+}

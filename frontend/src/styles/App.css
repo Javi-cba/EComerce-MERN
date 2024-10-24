@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+/* Estilos  Mobile */
+@media (max-width: 896px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  .header .ant-select {
+    width: 16rem !important;
+  }
+
+  .filter-category {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0rem !important;
+    margin-left: 0.5rem !important;
+    margin-top: 1rem !important;
+    width: 90% !important;
+    height: 27rem;
+    border-radius: 1.4rem;
+    gap: 0.4rem;
+    overflow-y: auto;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f3f3;
+  padding: 0.3rem;
+}
+
+.ant-btn {
+  color: #000000;
+  background-color: #f0a849ee;
+  border-color: #f0a849ee !important;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.ant-btn:hover {
+  color: #000000 !important;
+  background-color: #f0a849ee !important;
+  border-color: #000000ee !important;
+}
+
+.ant-btn2 {
+  color: #000000;
+  background-color: #27200200 !important;
+  border-color: #f0a849ee !important;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.ant-btn2:hover {
+  color: #000000 !important;
+  background-color: #f0a849ee !important;
+  border-color: #f0a849ee !important;
+}
+
+.header .ant-select {
+  width: 30rem;
+}
+
+.header .ant-select-selector {
+  font-size: 1.125rem !important; /* Ajusta a tu preferencia */
+}
+
+.header .ant-select-selector input {
+  font-size: 1.125rem !important;
+}
+
+.header .ant-select:hover .ant-select-selector {
+  border-color: #f0a849 !important;
+}
+.header .ant-select-focused .ant-select-selector {
+  border-color: #f0a849 !important;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2);
+  font-size: 1.125rem !important; /* Ajusta a tu preferencia */
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding-top: 1 !important;
+  padding-bottom: 0 !important;
+}
+
+.logoheader a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f0a849;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.logoheader img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.logoheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  height: 100vh;
+  justify-content: space-between;
+}
+/* Estilos base para FilterCategory */
+.filter-category {
+  display: flex;
+  flex-direction: column;
+
+  width: 16rem;
+  height: 25rem;
+  gap: 0.4rem;
+  overflow-y: auto;
+}
+
+.filter-category h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilos para los botones de categorías */
+.filter-category-item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #000000;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.filter-category-item:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-category-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.category-item-selected {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0a849d7;
+  cursor: pointer;
+  border: 1px solid #000000fa;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+
+.category-item-selected:hover {
+  background-color: #f0a849af;
+}
+
+.category-item-selected a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Mostrar el filtro solo en pantallas grandes */
+.filter-desktop {
+  display: none;
+}
+
+/* Estilo para el scrollbar  SOLO PARA CHROME Y SAFARI*/
+html::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f2f3f3 !important;
+  border-radius: 6px !important;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 6px !important;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-password:focus {
+  border-color: #f0a849 !important;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2) !important;
+}
+
+/* Estilo para Input normal en focus */
+.ant-input:focus {
+  border-color: #f0a849 !important;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2) !important;
+}
+
+/* Estilo para los inputs que tienen íconos o envoltorios especiales */
+.ant-input-affix-wrapper-focused {
+  border-color: #f0a849 !important;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2) !important;
+}
+
+/* Estilo para el input password */
+.ant-input-password .ant-input:focus {
+  border-color: #f0a849 !important;
+  box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.2) !important;
+}
+
+/* el color de fondo en hover para los inputs de Ant Design */
+.ant-input:hover {
+  border-color: #f0a849;
+}
+
+/* el color de fondo en hover para los inputs con íconos o envoltorios */
+.ant-input-affix-wrapper:hover .ant-input {
+  border-color: #f0a849;
+}
+
+.custom-spin .ant-spin-dot {
+  color: #f0a849;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
